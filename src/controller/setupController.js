@@ -1,9 +1,9 @@
-var Todos = require('../models/todoModel');
+const Todos = require('../models/todoModel');
 
 module.exports = function (app) {
   app.get('/api/setupTodos', function(req, res){
     //seed database
-    var starterTodos = [
+    const starterTodos = [
       {
         username: 'someone',
         todo: 'Comprar pão',

@@ -1,5 +1,5 @@
-var Todos = require('../models/todoModel');
-var bodyParser = require('body-parser');
+const Todos = require('../models/todoModel');
+const bodyParser = require('body-parser');
 
 module.exports = function(app) {
   app.use(bodyParser.json());
@@ -55,7 +55,7 @@ module.exports = function(app) {
 
   //função que adiciona nova tarefa
   app.post('/api/todo', function(req, res){
-    var newTodo = Todos({
+    const newTodo = Todos({
       username: 'someone',
       todo: req.body.todo,
       isDone: req.body.isDone,
