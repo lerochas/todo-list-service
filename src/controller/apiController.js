@@ -59,7 +59,6 @@ module.exports = function(app) {
       username: 'someone',
       todo: req.body.todo,
       isDone: req.body.isDone,
-      hasAttachment: req.body.hasAttachment,
     });
 
     newTodo.save(function(err){
