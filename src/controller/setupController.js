@@ -8,25 +8,21 @@ module.exports = function (app) {
         username: 'someone',
         todo: 'Comprar pão',
         isDone: true,
-        hasAttachment: false
       },
       {
         username: 'someone',
         todo: 'Colocar ração para o cachorro',
         isDone: true,
-        hasAttachment: false
       },
       {
         username: 'someone',
         todo: 'Lavar o carro',
         isDone: false,
-        hasAttachment: false
       },
       {
         username: 'someone',
         todo: 'Abastecer o carro',
         isDone: false,
-        hasAttachment: false
       },
     ];
     Todos.create(starterTodos, function(err, results){

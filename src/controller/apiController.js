@@ -12,7 +12,7 @@ module.exports = function(app) {
       
       res.status(200).json({
         success: true,
-        todo: todos,
+        todos: todos,
       });
     });
   });
@@ -86,11 +86,11 @@ module.exports = function(app) {
         todo: todo,
       });
     });
-  })
+  });
 
   //função que exclui tarefa
-  app.delete('/api/todo', function(req, res) {
-    Todos.findByIdAndRemove(req.body.id, function(err){
+  app.delete('/api/todo/:id', function(req, res) {
+    Todos.findByIdAndRemove(req.params.id, function(err){
       if (err) throw err;
 
       res.status(200).json({
