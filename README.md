@@ -9,5 +9,5 @@ Execute:
 1- Git clone repository
 2- yarn install
 3- yarn start
-4- Check your localhost:5000
+4- Check your localhost:5000/api/todos/someone
 ```
